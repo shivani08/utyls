@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shivani08/utyls/issues"
   },
-  "homepage": "https://github.com/shivani08/utyls#readme"
+  "homepage": "https://github.com/shivani08/utyls#readme",
+  "devDependencies": {
+    "typescript": "^1.8.9"
+  }
 }
