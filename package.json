@@ -13,7 +13,10 @@
   "author": "Shivani Alladi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sashank6/utyls/issues"
+    "url": "https://github.com/shivani08/utyls/issues"
   },
-  "homepage": "https://github.com/sashank6/utyls#readme"
+  "homepage": "https://github.com/shivani08/utyls#readme",
+  "devDependencies": {
+    "typescript": "^1.8.9"
+  }
 }
