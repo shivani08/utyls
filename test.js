@@ -1,40 +1,43 @@
 var utyls = require('./');
-
-var x = new utyls();
-
-
-testsFailed = 0;
-//Tests for isChar
-
-if (x.isChar(7) !== false)
-    testsFailed++;
-
-if (x.isChar('g') !== true)
-    testsFailed++;
-
-if (x.isChar('ghj') !== false)
-    testsFailed++;
-
-if (x.isChar(7.65) !== false)
-    testsFailed++;
-
-//TODO: Tests for inherited datatypes for isChar
+var assert=require('chai').assert;
 
 
-//Tests for leftpad
+//TODO: Add More Tests eg: Create a custom datatype and try to pass it.
+describe('Tests for isChar->',function(){
+   
+   var utobj=new utyls(); 
+it('Passes Integer',function(){
+    
+   assert.equal(utobj.isChar(7),false,""); 
+    
+});
 
-if (x.leftpad("23", 5) !== "***23")
-    testsFailed++;
-
-if (x.leftpad("ck", 4, '#') !== "##ck")
-    testsFailed++;
-
-
-//TODO: Add More Tests
+it('Passes Char',function(){
+    
+   assert.equal(utobj.isChar('g'),true,"");  
+    
+});
 
 
+it('Passes String',function(){
+   
+   
+   assert.equal(utobj.isChar('string'),false,"")
+    
+});
+
+
+it('Passes float/double',function(){
+   
+   
+   assert.equal(utobj.isChar(5.67),false,"");
+    
+});
+
+
+
+});
 
 
 
 
-console.log("Tests Failed: " + testsFailed);
