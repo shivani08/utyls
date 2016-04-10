@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/shivani08/utyls#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "typescript": "^1.8.9"
   }
 }
