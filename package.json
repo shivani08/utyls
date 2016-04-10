@@ -1,6 +1,6 @@
 {
   "name": "utyls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript util library",
   "main": "index.js",
   "scripts": {
