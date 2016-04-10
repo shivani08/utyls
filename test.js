@@ -3,6 +3,7 @@ var assert=require('chai').assert;
 
  var utobj=new utyls(); 
  
+ //Tests for isChar
 //TODO: Add More Tests eg: Create a custom datatype and try to pass it.
 describe('Tests for isChar->',function(){
    
@@ -35,6 +36,49 @@ it('Passes float/double',function(){
     
 });
 });
+
+
+//Tests for isInteger
+
+
+describe("Tests for isInteger->",function(){
+   
+   it("Passes char",function(){
+      
+      
+      assert.equal(utobj.isInteger('7'),false,"");
+       
+   });
+   
+   
+   it("Passes String",function(){
+      
+      assert.equal(utobj.isInteger("787"),false,"");
+       
+   });
+   
+   
+   it("Passes double/float",function(){
+      
+      assert.equal(utobj.isInteger(6.78),false,"");
+       
+   });
+   
+   it("Passes Integer",function(){
+      
+      assert.equal(utobj.isInteger(7),true,"");
+       
+   });
+   
+   
+   
+   
+   
+   
+    
+});
+
+
 
 
 describe("Tests for leftpad",function(){

@@ -7,7 +7,7 @@ class utyls {
         try {
 
             //TypeChecking of individual parameters    
-            if (Number.isInteger(len) === false) {
+            if (this.isInteger(len) === false) {
                 checkValues &= false;
                 throw "Required length is not an integer, please correct the 2nd parameter";
             }
@@ -45,6 +45,17 @@ class utyls {
     }
 
 
+    isInteger(intVal:any): Boolean {
+        
+        
+        if((typeof(intVal))=="number")
+        {
+           
+            return parseInt(String(intVal))===intVal;
+        }
+        
+        return false;
+    }
 
 
 

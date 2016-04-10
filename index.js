@@ -8,7 +8,7 @@ var utyls = (function () {
         var checkValues = true;
         try {
             //TypeChecking of individual parameters    
-            if (Number.isInteger(len) === false) {
+            if (this.isInteger(len) === false) {
                 checkValues &= false;
                 throw "Required length is not an integer, please correct the 2nd parameter";
             }
@@ -31,6 +31,12 @@ var utyls = (function () {
     };
     utyls.prototype.isChar = function (charVal) {
         return charVal.length === 1 && (charVal instanceof String) === false;
+    };
+    utyls.prototype.isInteger = function (intVal) {
+        if ((typeof (intVal)) == "number") {
+            return parseInt(String(intVal)) === intVal;
+        }
+        return false;
     };
     return utyls;
 }());
