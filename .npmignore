@@ -1,2 +1,7 @@
 /*.ts
 test.js
+tsconfig.json
+LICENSE
+README.md
+node_modules/
+*.log
