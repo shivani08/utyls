@@ -22,3 +22,9 @@ You can install utyls by using npm,  type `npm install utyls`, npm will fetch ut
     `utyls.leftpad('7',3,'0')` will produce 007
   - We use `*` as default character. If you do not specify a padding character, the string will be prefixed with `*`. 
     `utyls.leftpad('7',5)` will produce `****7`
+
+
+
+##5. Contribute
+Anybody can contribute to this repository. Initiate pull requests and we will look into it. 
+Contribution guidelines coming soon.
