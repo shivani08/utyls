@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/shivani08/utyls.svg?branch=master)](https://travis-ci.org/shivani08/utyls)
 [![npm version](https://badge.fury.io/js/utyls.svg)](https://badge.fury.io/js/utyls)
+[![Coverage Status](https://coveralls.io/repos/github/shivani08/utyls/badge.svg?branch=master)](https://coveralls.io/github/shivani08/utyls?branch=master)
 # utyls
 
 ##1. What is utyls?
