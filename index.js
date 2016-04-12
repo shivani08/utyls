@@ -17,7 +17,7 @@ var utyls = (function () {
                 throw "Padding character is not a character, please correct 3rd parameter";
             }
             if (checkValues) {
-                while (str.length <= len)
+                while (str.length < len)
                     str = paddingChar + str;
                 return str;
             }
