@@ -94,6 +94,11 @@ describe("Tests for leftpad",function(){
        
    });
    
+   //input leftpad("788",2,"6");
+   //input leftpad("776",10,"607");
+   //input leftpad("",100)
+   //input leftpad("ThisisTextoflength50",50)
+   //input leftpad("gha",-9)
    
    
    
