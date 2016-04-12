@@ -20,7 +20,7 @@ class utyls {
 
             if (checkValues) {
 
-                while (str.length <= len)
+                while (str.length < len)
                     str = paddingChar + str;
 
                 return str;
