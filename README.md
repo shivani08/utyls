@@ -9,8 +9,8 @@ utyls is aimed to provide a collection of JavaScript utility functions.
 You can install utyls by using npm,  type `npm install utyls`, npm will fetch utyls and installs it.
 
 ##3. Basic Usage
-
-```var Utyls=require('utyls');
+```javascript
+var Utyls=require('utyls');
 
 var utyls=new Utyls();
 
