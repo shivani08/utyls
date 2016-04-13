@@ -70,16 +70,85 @@ describe("Tests for isInteger->",function(){
        
    });
    
+   it("Passes string with ascii characters",function(){
+    
+    assert.strictEqual(utobj.isInteger("utyls"),false,"");
+    
+   });
+   
+   it("Passes fraction resulting in integer",function(){
+    
+   assert.strictEqual(utobj.isInteger(21/3),true,"");
+   
+   });
+   
+   it("Passes fraction resulting in double",function(){
+    
+   assert.strictEqual(utobj.isInteger(22/3),false,"");
+   
+   });
+   
+   it("Passes string with special characters",function(){
+    
+   assert.strictEqual(utobj.isInteger('*$'),false,"");
+   
+   });
+   
+   it("Passes special character",function(){
+    
+   assert.strictEqual(utobj.isInteger('*'),false,"");
+   
+   });
+   
+   it("Passes character",function(){
+    
+   assert.strictEqual(utobj.isInteger('u'),false,"");
+   
+   });
+   
+   it("Passes Zero",function(){
+    
+   assert.strictEqual(utobj.isInteger(0),true,"");
+   
+   });
+   
+   it("Passes Negative Integer",function(){
+    
+   assert.strictEqual(utobj.isInteger(-7),true,"");
+   
+   });
+   
+   it("Passes Negative double/float",function(){
+    
+   assert.strictEqual(utobj.isInteger(-7.84),false,"");
+   
+   });
+   
+   it("Passes negative fraction resulting in integer",function(){
+    
+   assert.strictEqual(utobj.isInteger(-21/7),true,"");
+   
+   });
+   
+   it("Passes negative fraction resulting integer t2",function(){
+    
+   assert.strictEqual(utobj.isInteger(-21/-3),true,"");
+   
+   });
    
    
+   it("Passes negative fraction resulting in double",function(){
+    
+   assert.strictEqual(utobj.isInteger(-22/7),false,"");
    
+   });
    
    
     
 });
 
 
-//TODO: Need More Tests to be written
+//TODO: More Tests to be written
 
 describe("Tests for leftpad",function(){
    
@@ -146,18 +215,7 @@ describe("Tests for leftpad",function(){
    });
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
     
 });
 
