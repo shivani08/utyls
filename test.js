@@ -118,10 +118,39 @@ describe("Tests for leftpad",function(){
       assert.equal(utobj.leftpad("",10),"**********",""); 
    });
    
-   it("String and required length",function(){
+   it("Passes String and required length",function(){
       
       assert.equal(utobj.leftpad("ThisisTextoflength50",50),"******************************ThisisTextoflength50",""); 
    });
+   
+   
+   it("Passes string and a double value as required length",function(){
+    
+      assert.equal(utobj.leftpad("",2.34),undefined,"");
+    
+   });
+   
+   it("Passes string and a required double value with a padding character",function(){
+     
+     assert.equal(utobj.leftpad("",2.34,'0'),undefined,"");
+   });
+   
+   it("Passes string and fraction(when solved integer) as required length",function(){
+    
+    assert.equal(utobj.leftpad("",21/7),"***","");
+   });
+   
+   it("Passes string and fraction(when solved double) as required length",function(){
+    
+    assert.equal(utobj.leftpad("",22/7),undefined,"");
+   });
+   
+   
+   
+   
+   
+   
+   
    
    
    
