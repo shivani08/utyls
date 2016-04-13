@@ -27,6 +27,7 @@ var utyls = (function () {
         }
         catch (err) {
             console.log("ERROR: " + err);
+            return undefined;
         }
     };
     utyls.prototype.isChar = function (charVal) {

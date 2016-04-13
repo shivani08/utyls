@@ -36,6 +36,7 @@ class utyls {
         catch (err) {
 
             console.log("ERROR: " + err);
+            return undefined;
         }
     }
 
