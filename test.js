@@ -2,6 +2,8 @@ var utyls = require('./');
 var assert=require('chai').assert;
 
  var utobj=new utyls(); 
+ var object={};
+ var array=[];
  
  //Tests for isChar
 //TODO: Add More Tests eg: Create a custom datatype and try to pass it.
@@ -142,6 +144,27 @@ describe("Tests for isInteger->",function(){
    assert.strictEqual(utobj.isInteger(-22/7),false,"");
    
    });
+   
+   it("Passes utyls object",function(){
+    
+   assert.strictEqual(utobj.isInteger(utyls),false,"");
+   
+   });
+   
+   it("Passes empty object",function(){
+    
+   assert.strictEqual(utobj.isInteger(object),false,"");
+   
+   });
+   
+   it("Passes array",function(){
+    
+   assert.strictEqual(utobj.isInteger(array),false,"");
+   
+   });
+   
+   
+   
    
    
     
