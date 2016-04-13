@@ -101,24 +101,24 @@ describe("Tests for leftpad",function(){
    });
    
    
-   it("Passes a string instead of padding character",()=>{
+   it("Passes a string instead of padding character",function(){
       
       assert.equal(utobj.leftpad("776",10,"607"),undefined,"") ;
    });
    
-   it("Passes negative length as required  length",()=>{
+   it("Passes negative length as required  length",function(){
       
       assert.equal(utobj.leftpad("gha",-9),"gha","");
        
    });
    
    
-   it("Passes empty string ",()=>{
+   it("Passes empty string ",function(){
        
       assert.equal(utobj.leftpad("",10),"**********",""); 
    });
    
-   it("String and required length",()=>{
+   it("String and required length",function(){
       
       assert.equal(utobj.leftpad("ThisisTextoflength50",50),"******************************ThisisTextoflength50",""); 
    });
