@@ -10,11 +10,16 @@ You can install utyls by using npm,  type `npm install utyls`, npm will fetch ut
 
 ##3. Basic Usage
 
-`var Utyls=require('utyls');`
+```javascript
+var Utyls=require('utyls');
 
-`var utyls=new Utyls();`
 
-`console.log(utyls.leftpad('7',5))`
+var utyls=new Utyls();
+
+
+console.log(utyls.leftpad('7',5))
+```
+
 
 ##4. API
 ####1.leftpad(str:String,len:Integer,paddingchar:Character)
