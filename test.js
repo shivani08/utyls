@@ -37,6 +37,58 @@ it('Passes float/double',function(){
    assert.strictEqual(utobj.isChar(5.67),false,"");
     
 });
+
+it('Passes utyls object',function(){
+   
+   
+   assert.strictEqual(utobj.isChar(utobj),false,"");
+    
+});
+
+
+it('Passes empty object',function(){
+   
+   
+   assert.strictEqual(utobj.isChar(object),false,"");
+    
+});
+
+it('Passes empty array',function(){
+   
+   
+   assert.strictEqual(utobj.isChar(array),false,"");
+    
+});
+
+
+it('Passes special character',function(){
+   
+    assert.strictEqual(utobj.isChar('*'),true,"");
+});
+
+it('Passes empty string',function(){
+   
+   assert.strictEqual(utobj.isChar(''),false,""); 
+});
+
+it('Passes string with doublequotes',function(){
+   
+   assert.strictEqual(utobj.isChar("string"),false,""); 
+});
+
+it('Passes single quote',function(){
+   
+   assert.strictEqual(utobj.isChar("'"),true,""); 
+});
+
+it('Passes unicode',function(){
+   
+   assert.strictEqual(utobj.isChar('\u4e0a'),true,""); 
+});
+
+
+
+
 });
 
 
