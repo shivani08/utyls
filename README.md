@@ -33,7 +33,7 @@ console.log(utyls.leftpad('7',5))
 -   **Parameters: isInteger(Any)**
     
     
-####3. leftpad(str:String,len:Integer,paddingchar:Character)
+####3. leftpad(str:string,len:number,paddingchar:character)
   - leftpad function will add padding characters to the beginning of the string to make it length equal to len variable passed as 2nd parameter. For example 
     `utyls.leftpad('7',3,'0')` will produce 007
   - We use `*` as default character. If you do not specify a padding character, the string will be prefixed with `*`. 
