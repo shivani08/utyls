@@ -22,14 +22,13 @@ console.log(utyls.leftpad('7',5))
 
 
 ##4. API
-####1. isChar(any:Any)
-    - isChar function will take any input and returns true of the data passed is a character else false.
-    - | Tables        | Are           | Cool  |
-      | col 3 is      | right-aligned | $1600 |
-      | col 2 is      | centered      |   $12 |
-      | zebra stripes | are neat      |    $1 |
+####1.isChar(any:Any)
+-    isChar(any:Any) will take any value as parameter and will return true if the value is character else false.
+-    Output:boolean(true/false)
+-    Parameters: any value
     
-####1.leftpad(str:String,len:Integer,paddingchar:Character)
+    
+####3.leftpad(str:String,len:Integer,paddingchar:Character)
   - leftpad function will add padding characters to the beginning of the string to make it length equal to len variable passed as 2nd parameter. For example 
     `utyls.leftpad('7',3,'0')` will produce 007
   - We use `*` as default character. If you do not specify a padding character, the string will be prefixed with `*`. 
