@@ -24,13 +24,13 @@ console.log(utyls.leftpad('7',5))
 ##4. API
 #####1. isChar(any:Any)
 -    isChar(any:Any) will take any value as parameter and will return true if the value is character else false.
--    ***Output:&nbsp;boolean(true/false)***
--    ***Parameters:&nbsp;isChar(Any)***
+-    *Output:&nbsp;boolean(true/false)*
+-    *Parameters:&nbsp;isChar(Any)*
 
 #####2. isInteger(any:Any)
 -   isInteger(any:Any) will take any value as parameter and will return true if the value is integer else false.
--   ***Output:&nbsp;boolean(true/false)***
--   ***Parameters:&nbsp;isInteger(Any)***
+-   *Output:&nbsp;boolean(true/false)*
+-   *Parameters:&nbsp;isInteger(Any)*
     
     
 #####3. leftpad(str:string,len:number,paddingchar:character)
@@ -40,8 +40,8 @@ console.log(utyls.leftpad('7',5))
     `utyls.leftpad('7',5)` will produce `****7`
   - If invalid datatypes are passed as parameters the function will throw an error and will return undefined.
   - If required length is less than the length of the string that is passed, the function returns the same string.
-  - ***Output:&nbsp;string/undefined  (Padded string of length equal to required length)***
-  - ***Parameters:&nbsp;leftpad(String,required_length,PaddingCharacter)***
+  - *Output:&nbsp;string/undefined  (Padded string of length equal to required length)*
+  - *Parameters:&nbsp;leftpad(String,required_length,PaddingCharacter)*
 
 
 
