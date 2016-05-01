@@ -22,11 +22,27 @@ console.log(utyls.leftpad('7',5))
 
 
 ##4. API
-####1.leftpad(str:String,len:Integer,paddingchar:Character)
+#####1. isChar(any:Any)
+-    isChar(any:Any) will take any value as parameter and will return true if the value is character else false.
+-    *Output:&nbsp;boolean(true/false)*
+-    *Parameters:&nbsp;isChar(Any)*
+
+#####2. isInteger(any:Any)
+-   isInteger(any:Any) will take any value as parameter and will return true if the value is integer else false.
+-   *Output:&nbsp;boolean(true/false)*
+-   *Parameters:&nbsp;isInteger(Any)*
+    
+    
+#####3. leftpad(str:string,len:number,paddingchar:character)
   - leftpad function will add padding characters to the beginning of the string to make it length equal to len variable passed as 2nd parameter. For example 
     `utyls.leftpad('7',3,'0')` will produce 007
   - We use `*` as default character. If you do not specify a padding character, the string will be prefixed with `*`. 
     `utyls.leftpad('7',5)` will produce `****7`
+  - If invalid datatypes are passed as parameters the function will throw an error and will return undefined.
+  - If required length is less than the length of the string that is passed, the function returns the same string.
+  - *Output:&nbsp;string/undefined  (Padded string of length equal to required length)*
+  - *Parameters:&nbsp;leftpad(String,required_length,PaddingCharacter)*
+
 
 
 
