@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Utyls by shivani08</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Utyls</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/shivani08/utyls" class="btn">View on GitHub</a>
+      <a href="https://github.com/shivani08/utyls/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/shivani08/utyls/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><a href="https://travis-ci.org/shivani08/utyls"><img src="https://travis-ci.org/shivani08/utyls.svg?branch=master" alt="Build Status"></a>
+<a href="https://badge.fury.io/js/utyls"><img src="https://badge.fury.io/js/utyls.svg" alt="npm version"></a>
+<a href="https://coveralls.io/github/shivani08/utyls?branch=master"><img src="https://coveralls.io/repos/github/shivani08/utyls/badge.svg?branch=master" alt="Coverage Status"></a></p>
+
+<h1>
+<a id="utyls" class="anchor" href="#utyls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>utyls</h1>
+
+<h2>
+<a id="1-what-is-utyls" class="anchor" href="#1-what-is-utyls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. What is utyls?</h2>
+
+<p>utyls is aimed to provide a collection of JavaScript utility functions. </p>
+
+<h2>
+<a id="2-how-to-install-utyls" class="anchor" href="#2-how-to-install-utyls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. How to install utyls?</h2>
+
+<p>You can install utyls by using npm,  type <code>npm install utyls</code>, npm will fetch utyls and installs it.</p>
+
+<h2>
+<a id="3-basic-usage" class="anchor" href="#3-basic-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Basic Usage</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> Utyls<span class="pl-k">=</span><span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>utyls<span class="pl-pds">'</span></span>);
+
+
+<span class="pl-k">var</span> utyls<span class="pl-k">=</span><span class="pl-k">new</span> <span class="pl-en">Utyls</span>();
+
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">utyls</span>.<span class="pl-en">leftpad</span>(<span class="pl-s"><span class="pl-pds">'</span>7<span class="pl-pds">'</span></span>,<span class="pl-c1">5</span>))</pre></div>
+
+<h2>
+<a id="4-api" class="anchor" href="#4-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. API</h2>
+
+<h5>
+<a id="1-ischaranyany" class="anchor" href="#1-ischaranyany" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. isChar(any:Any)</h5>
+
+<ul>
+<li>   isChar(any:Any) will take any value as parameter and will return true if the value is character else false.</li>
+<li>   <em>Output: boolean(true/false)</em>
+</li>
+<li>   <em>Parameters: isChar(Any)</em>
+</li>
+</ul>
+
+<h5>
+<a id="2-isintegeranyany" class="anchor" href="#2-isintegeranyany" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. isInteger(any:Any)</h5>
+
+<ul>
+<li>  isInteger(any:Any) will take any value as parameter and will return true if the value is integer else false.</li>
+<li>  <em>Output: boolean(true/false)</em>
+</li>
+<li>  <em>Parameters: isInteger(Any)</em>
+</li>
+</ul>
+
+<h5>
+<a id="3-leftpadstrstringlennumberpaddingcharcharacter" class="anchor" href="#3-leftpadstrstringlennumberpaddingcharcharacter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. leftpad(str:string,len:number,paddingchar:character)</h5>
+
+<ul>
+<li>leftpad function will add padding characters to the beginning of the string to make it length equal to len variable passed as 2nd parameter. For example 
+<code>utyls.leftpad('7',3,'0')</code> will produce 007</li>
+<li>We use <code>*</code> as default character. If you do not specify a padding character, the string will be prefixed with <code>*</code>. 
+<code>utyls.leftpad('7',5)</code> will produce <code>****7</code>
+</li>
+<li>If invalid datatypes are passed as parameters the function will throw an error and will return undefined.</li>
+<li>If required length is less than the length of the string that is passed, the function returns the same string.</li>
+<li><em>Output: string/undefined  (Padded string of length equal to required length)</em></li>
+<li><em>Parameters: leftpad(String,required_length,PaddingCharacter)</em></li>
+</ul>
+
+<h2>
+<a id="5-contribute" class="anchor" href="#5-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Contribute</h2>
+
+<p>Anybody can contribute to this repository. Initiate pull requests and we will look into it. 
+Contribution guidelines coming soon.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/shivani08/utyls">Utyls</a> is maintained by <a href="https://github.com/shivani08">shivani08</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
