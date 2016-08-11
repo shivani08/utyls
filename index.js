@@ -4,10 +4,9 @@ var utyls = (function () {
     }
     utyls.prototype.leftpad = function (str, len, paddingChar) {
         if (paddingChar === void 0) { paddingChar = '*'; }
-        str = String(str);
         var checkValues = true;
         try {
-            //TypeChecking of individual parameters    
+            //TypeChecking of individual parameters
             if (this.isInteger(len) === false) {
                 checkValues &= false;
                 throw "Required length is not an integer, please correct the 2nd parameter";
@@ -31,7 +30,7 @@ var utyls = (function () {
         }
     };
     utyls.prototype.isChar = function (charVal) {
-        return charVal.length === 1 && (charVal instanceof String) === false;
+        return charVal.length === 1 && (toString.call(charVal) === "[object String]") === true;
     };
     utyls.prototype.isInteger = function (intVal) {
         if ((typeof (intVal)) == "number") {
