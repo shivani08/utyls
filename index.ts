@@ -28,7 +28,7 @@ class utyls {
     }
 
     isChar(charVal: any): boolean {
-        return charVal.length === 1 && (toString.call(charVal) === "[object String]") === true;
+        return charVal.length === 1 && (toString.call(charVal) === "[object String]");
     }
 
     isInteger(intVal:any): boolean {
