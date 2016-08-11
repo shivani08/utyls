@@ -30,7 +30,7 @@ var utyls = (function () {
         }
     };
     utyls.prototype.isChar = function (charVal) {
-        return charVal.length === 1 && (toString.call(charVal) === "[object String]") === true;
+        return charVal.length === 1 && (toString.call(charVal) === "[object String]");
     };
     utyls.prototype.isInteger = function (intVal) {
         if ((typeof (intVal)) == "number") {
